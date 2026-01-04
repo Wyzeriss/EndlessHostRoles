@@ -1434,7 +1434,7 @@ internal static class ChatCommands
 
         IEnumerator RepeatedlySendMessage()
         {
-            for (var index = 0; index < 3; index++)
+            for (var index = 0; index < 2; index++)
             {
                 List<Message> messages = [];
 
@@ -1773,7 +1773,7 @@ internal static class ChatCommands
                 PollTimer -= Time.deltaTime;
                 resendTimer += Time.deltaTime;
 
-                if (resendTimer > 23f)
+                if (resendTimer > 30f)
                 {
                     resendTimer = 0f;
                     Utils.SendMessage(msg + $"{string.Format(GetString("Poll.TimeInfo"), (int)Math.Round(PollTimer))}</i></size>", title: title, sendOption: SendOption.None);
@@ -3806,3 +3806,4 @@ internal static class RpcSendChatPatch
         return false;
     }
 }
+
