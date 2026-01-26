@@ -386,7 +386,6 @@ public static class Options
     public static OptionItem SpeedForSkeld;
     public static OptionItem SpeedForMira;
     public static OptionItem SpeedForPolus;
-    public static OptionItem SpeedForDlesk;
     public static OptionItem SpeedForAirship;
     public static OptionItem SpeedForFungle;
 
@@ -1944,16 +1943,13 @@ public static class Options
             .SetParent(FungleChance)
             .SetValueFormat(OptionFormat.Players);
 
-        SpeedForSkeld = new FloatOptionItem(20782, "SpeedForSkeld", new(0.05f, 3f, 0.05f), 1.25f, TabGroup.GameSettings)
+        SpeedForSkeld = new FloatOptionItem(20782, "SpeedforSkeldAndDleks", new(0.05f, 3f, 0.05f), 1.25f, TabGroup.GameSettings)
             .SetValueFormat(OptionFormat.Multiplier);
 
         SpeedForMira = new FloatOptionItem(20783, "SpeedForMira", new(0.05f, 3f, 0.05f), 1.25f, TabGroup.GameSettings)
             .SetValueFormat(OptionFormat.Multiplier);
 
         SpeedForPolus = new FloatOptionItem(20784, "SpeedForPolus", new(0.05f, 3f, 0.05f), 1.25f, TabGroup.GameSettings)
-            .SetValueFormat(OptionFormat.Multiplier);
-
-        SpeedForDlesk = new FloatOptionItem(20785, "SpeedForDlesk", new(0.05f, 3f, 0.05f), 1.25f, TabGroup.GameSettings)
             .SetValueFormat(OptionFormat.Multiplier);
 
         SpeedForAirship = new FloatOptionItem(20786, "SpeedForAirship", new(0.05f, 3f, 0.05f), 1.25f, TabGroup.GameSettings)
