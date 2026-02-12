@@ -296,6 +296,7 @@ public enum CustomRoles
     Agitator,
     Amnesiac,
     Amogus,
+    Antagonizer,
     Arsonist,
     Auditor,
     Backstabber,
