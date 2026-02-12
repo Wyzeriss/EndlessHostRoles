@@ -620,6 +620,7 @@ public class Main : BasePlugin
                 { CustomRoles.EvilSpirit, "#003366" },
                 { CustomRoles.Convict, "#ff1919" },
                 { CustomRoles.Amnesiac, "#7FBFFF" },
+                { CustomRoles.Antagonizer, "#2BA62F" },
                 { CustomRoles.Doomsayer, "#14f786" },
                 // Ghost roles
                 { CustomRoles.Warden, "#32a852" },
@@ -1194,4 +1195,5 @@ public enum TieMode
 }
 
 public class Coroutines : MonoBehaviour { }
+
 
