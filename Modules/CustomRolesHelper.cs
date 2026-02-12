@@ -324,6 +324,7 @@ internal static class CustomRolesHelper
             CustomRoles.Greedy => CustomRoles.Impostor,
             CustomRoles.Workaholic => CustomRoles.Engineer,
             CustomRoles.Amnesiac => Amnesiac.CanVent.GetBool() ? CustomRoles.Engineer : CustomRoles.Crewmate,
+            CustomRoles.Antagonizer => CustomRoles.Impostor
             CustomRoles.Speedrunner => CustomRoles.Crewmate,
             CustomRoles.CursedWolf => CustomRoles.Impostor,
             CustomRoles.Collector => CustomRoles.Crewmate,
@@ -1585,6 +1586,7 @@ internal static class CustomRolesHelper
             CustomRoles.Opportunist => RoleOptionType.Neutral_Benign,
             CustomRoles.Lawyer => RoleOptionType.Neutral_Benign,
             CustomRoles.Amnesiac => RoleOptionType.Neutral_Benign,
+            CustomRoles.Antagonizer => RoleOptionType.Neutral_Benign,
             CustomRoles.Pawn => RoleOptionType.Neutral_Benign,
             CustomRoles.Postman => RoleOptionType.Neutral_Benign,
             CustomRoles.Dealer => RoleOptionType.Neutral_Benign,
@@ -2038,6 +2040,7 @@ public enum CountTypes
 
     Coven
 }
+
 
 
 
