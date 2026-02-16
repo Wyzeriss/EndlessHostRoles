@@ -109,7 +109,6 @@ public class Main : BasePlugin
     public static Dictionary<byte, int> GuesserGuessed = [];
     public static Dictionary<byte, int> GuesserGuessedMeeting = [];
     public static bool HasJustStarted;
-    public static int AliveImpostorCount;
     public static Dictionary<byte, bool> CheckShapeshift = [];
     public static Dictionary<byte, byte> ShapeshiftTarget = [];
     public static bool VisibleTasksCount;
@@ -153,7 +152,7 @@ public class Main : BasePlugin
     public static int MadmateNum;
     public static uint LobbyBehaviourNetId;
     
-    public static float GameTimer;
+    public static Stopwatch GameTimer = new();
     public static bool GameEndDueToTimer;
 
     public static bool ShowResult = true;
@@ -231,7 +230,7 @@ public class Main : BasePlugin
     {
         foreach (var pc in PlayerControl.AllPlayerControls)
         {
-            if (pc == null || pc.PlayerId >= 254) continue;
+            if (!pc || pc.PlayerId >= 254) continue;
             yield return pc;
         }
     }
@@ -240,7 +239,7 @@ public class Main : BasePlugin
     {
         return EnumeratePlayerControls()
             .Where(pc => pc.IsAlive()
-                         && pc.Data != null
+                         && pc.Data
                          && (!pc.Data.Disconnected || !IntroDestroyed)
                          && !Pelican.IsEaten(pc.PlayerId));
     }
