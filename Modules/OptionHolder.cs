@@ -2482,7 +2482,7 @@ public static class Options
 
         ChatDuringGame = new BooleanOptionItem(24015, "ChatDuringGame", false, TabGroup.TaskSettings)
          .SetGameMode(CustomGameMode.Standard)
-         .SetColor(color);
+         .SetColor(Color.blue);
 
         EveryoneCanVent = new BooleanOptionItem(23853, "EveryoneCanVent", false, TabGroup.TaskSettings)
             .SetGameMode(CustomGameMode.Standard)
@@ -3537,3 +3537,4 @@ public static class Options
 
     // ReSharper restore NotAccessedField.Global
 }
+
