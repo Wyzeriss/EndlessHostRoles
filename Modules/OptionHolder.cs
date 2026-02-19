@@ -254,6 +254,7 @@ public static class Options
     public static OptionItem DisableVoteStartCommand;
     public static OptionItem DisableVentingOn1v1;
     public static OptionItem DisableSabotagingOn1v1;
+    public static OptionItem StandardMidGameChat
 
     public static OptionItem DisableReactorOnSkeldAndMira;
     public static OptionItem DisableReactorOnPolus;
@@ -3532,3 +3533,4 @@ public static class Options
 
     // ReSharper restore NotAccessedField.Global
 }
+
