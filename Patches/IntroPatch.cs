@@ -1176,6 +1176,7 @@ internal static class IntroCutsceneDestroyPatch
                 case CustomGameMode.Quiz when Quiz.Chat:
                 case CustomGameMode.HideAndSeek when CustomHnS.Chat:
                 case CustomGameMode.NaturalDisasters when NaturalDisasters.Chat:
+                case CustomGameMode.Standard when Standard.Chat:
                     Utils.SetChatVisibleForAll();
                     break;
             }
@@ -1415,3 +1416,4 @@ internal static class IntroCutsceneDestroyPatch
     }
 
 }
+
