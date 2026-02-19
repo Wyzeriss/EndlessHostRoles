@@ -1296,7 +1296,14 @@ internal static class ChatCommands
     {
         ReadyPlayers.Add(player.PlayerId);
     }
-
+    
+    private static OptionItem ChatDuringGame;
+    public static bool Chat => ChatDuringGame.GetBool();
+            
+        ChatDuringGame = new BooleanOptionItem(id + 5, "FFA_ChatDuringGame", false, TabGroup.GameSettings)
+            .SetGameMode(CustomGameMode.Standard)
+            .SetColor(color);
+    
     public static void DraftStartCommand(PlayerControl player, string text, string[] args)
     {
         if (Options.CurrentGameMode != CustomGameMode.Standard) return;
