@@ -2842,7 +2842,7 @@
   "ImmuneToAttacksWhenTasksDone": "Immune to attacks on task completion",
   "Patroller": "Patroller",
   "PatrollerInfo": "Have Different Boosts in Each Room",
-  "PatrollerInfoLong": "(Neutrals):\\nAs the Patroller, you have different boosts in each room. At the start of the game, it gets randomly rolled which boosts you get in which room. Additionally, you can vent freely from any room once per round.\\n\\nKill everyone to win!\\nYou can see your boosts by petting if the setting to use them is on.",
+  "PatrollerInfoLong": "(Neutrals):\\nAs the Patroller, you have different boosts in each room. At the start of the game, it gets randomly rolled which boosts you get in which room. Additionally, you can vent freely from any room once per round.\\n\\nKill everyone to win!\\nYou can see your boosts by petting if the setting to use them is on.\n\nThose are the boosts that you can earn:\nIncreased Speed\nShorter Kill cooldown\nBigger Kill Range\nIncreased Vision\nAbility to Vent\nAbility to Sabotage",
   "PatrollerBoost.Cooldown": "you have <color=#00ffa5>lower kill cooldown</color>",
   "PatrollerBoost.Range": "you have <color=#00ffa5>higher kill range</color>",
   "PatrollerBoost.Sabotage": "<color=#00ffa5>you can sabotage</color>",
