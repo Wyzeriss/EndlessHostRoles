@@ -2480,8 +2480,9 @@ public static class Options
             .SetParent(UseMeetingShapeshift)
             .SetColor(Palette.Orange);
 
-        ChatDuringGame = new BooleanOptionItem(24015, "ChatDuringGame", false, TabGroup.TaskSettings)
+        ChatDuringGame = new BooleanOptionItem(24015, ""FFA_ChatDuringGame", false, TabGroup.TaskSettings)
          .SetGameMode(CustomGameMode.Standard)
+         .SetHeader(true)
          .SetColor(Color.blue);
 
         EveryoneCanVent = new BooleanOptionItem(23853, "EveryoneCanVent", false, TabGroup.TaskSettings)
@@ -3537,5 +3538,6 @@ public static class Options
 
     // ReSharper restore NotAccessedField.Global
 }
+
 
 
