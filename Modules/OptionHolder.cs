@@ -2480,7 +2480,7 @@ public static class Options
             .SetParent(UseMeetingShapeshift)
             .SetColor(Palette.Orange);
 
-        ChatDuringGame = new BooleanOptionItem(24015, ""FFA_ChatDuringGame", false, TabGroup.TaskSettings)
+        ChatDuringGame = new BooleanOptionItem(24015, "FFA_ChatDuringGame", false, TabGroup.TaskSettings)
          .SetGameMode(CustomGameMode.Standard)
          .SetHeader(true)
          .SetColor(Color.blue);
