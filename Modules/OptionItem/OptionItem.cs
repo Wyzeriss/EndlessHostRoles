@@ -8,7 +8,7 @@ namespace EHR;
 
 public abstract class OptionItem
 {
-    public const int NumPresets = 20;
+    public const int NumPresets = 50;
     public const int PresetId = 0;
     public readonly List<OptionItem> Children;
 
